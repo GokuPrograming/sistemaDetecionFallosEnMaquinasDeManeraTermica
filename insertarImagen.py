@@ -24,7 +24,7 @@ def predecir(model_path, image_paths):
 
 if __name__ == "__main__":
     model_path = "models/RedConv-n128-cl1-d2-dropout0.keras"  
-    image_paths = ["Bueno1.jpg", "Bueno2.png", "Malo3.jpg", "Malo4.jpg",
+    image_paths = ["image.png", "Bueno2.png", "Malo3.jpg", "Malo4.jpg",
                    "Malo5.jpg"] 
 
     resultados = predecir(model_path, image_paths)
