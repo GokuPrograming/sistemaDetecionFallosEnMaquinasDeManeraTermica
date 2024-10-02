@@ -1,5 +1,7 @@
 version 1.0
 fecha->29/09/2024
+-------COMANDOS IMPORTANTES
+tensorboard --logdir=logs/    ->AYUDA A VER LOS DATOS EN EL NAVEGADOR
 -------VERSION DE PYTHON--------
 se necesita version de python 3.12.5  -> https://www.python.org/downloads/release/python-3125/
 -------DEPENDENCIAS Y LIBRERIAS-------

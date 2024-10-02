@@ -7,7 +7,6 @@ from tensorflow.keras.callbacks import TensorBoard
 import pickle
 import numpy as np
 import os
-import cv2
 from SerializarDatos import TamañoImagen, Categoria  # Asumo que tienes un archivo GenerarDatos.py
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -66,6 +65,6 @@ def entrenar():
                     model.compile(loss="binary_crossentropy",
                                   optimizer="adam",
                                   metrics=['accuracy'])
-                    model.fit(imagenes,etiquetas, batch_size=30, epochs=20, validation_split=0.3, callbacks=[tensorboard])
+                    model.fit(imagenes,etiquetas, batch_size=30, epochs=13, validation_split=0.3, callbacks=[tensorboard])
                     model.save("models/{}.keras".format(nombreModelo))  
 entrenar()
